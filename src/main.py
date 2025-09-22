@@ -6,7 +6,7 @@ status = ""
 
 root = tkinter.Tk()
 root.geometry("900x900")
-root.title("ASPE P2P")
+root.title("P2P")
 root.configure(bg="#000000")
 
 # Client 1 (Server)
