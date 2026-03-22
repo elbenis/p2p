@@ -55,7 +55,7 @@ def ServerFN():
             try:
                 verificate(client_public_key, plaintext, sig)
             except:
-                pass
+                print("[!] Failed to verify message.")
             newMsg = tkinter.Label(chat, text=("Other: " + plaintext))
             newMsg.pack(side="top", anchor="w")
 
@@ -78,7 +78,8 @@ def ClientFN():
             try:
                 verificate(server_public_key, plaintext, sig)
             except:
-                pass
+                print("[!] Failed to verify message.")
+
             newMsg = tkinter.Label(chat, text=("Other: " + plaintext))
             newMsg.pack(side="top", anchor="w")
 
